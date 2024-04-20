@@ -29,12 +29,21 @@ inner join have_grade on "user".id = have_grade.user_id
 inner join exam on exam.id = have_grade.exam_id where exam.course_id = 3
 order by point desc limit 1;
 
+
+
+
 select 
     follow.user_id
 from follow
 where follow.course_id = 1;
 
-select "user".* 
-from "user"
+-- Find the user who doesn't follow the LV1
+select * 
+from 
+    "user"
 where 
-    "user".id !=
+    id not in (
+        select user_id
+        from follow
+        where course_id = 1;
+    );
