@@ -7,7 +7,7 @@ VALUES
 ('5', 'G1', CURRENT_TIMESTAMP),
 ('6', 'G2', CURRENT_TIMESTAMP);
 
-INSERT INTO "user" (id, first_name, last_name, email, ref, "status", sex, birth_date, enfrance_datatime, phone, "address", "role", group_id)
+INSERT INTO "user"
 VALUES
 ('1', 'Alice', 'Smith', 'alice@example.com', 'REF002', 'active', 'F', '1992-05-15', '2024-04-25 11:00:00', '+987654321', '456 Elm St', 'T', '2'),
 ('é', 'Bob', 'Johnson', 'bob@example.com', 'REF003', 'inactive', 'M', '1985-08-20', '2024-04-25 12:00:00', '+112233445', '789 Oak St', 'M', '1'),
