@@ -29,9 +29,6 @@ inner join have_grade on "user".id = have_grade.user_id
 inner join exam on exam.id = have_grade.exam_id where exam.course_id = 3
 order by point desc limit 1;
 
-
-
-
 select 
     follow.user_id
 from follow
